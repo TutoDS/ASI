@@ -22,3 +22,12 @@ print()
 # Exemplo com input
 # a = input("Insira o número ")
 # print(alunos[a])
+
+
+# Listas
+favoritos = ["PEI", "PAW", "ASI"]
+favoritos.sort()
+print("After sort: ", favoritos)
+
+favoritos.reverse()
+print("After reverse: ", favoritos)
