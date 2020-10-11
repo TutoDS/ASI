@@ -16,7 +16,7 @@ Useful to months of year (for example)
 # Chave única
 alunos = {"8160334": {"nome": "Daniel Sousa", "curso": "LEI"}, "818044": {"nome": "Luis", "curso": "LSIRC"}}
 print(json.dumps(alunos, indent=4))
-
+print(alunos["8160334"])
 print()
 
 # Exemplo com input
@@ -25,9 +25,24 @@ print()
 
 
 # Listas
-favoritos = ["PEI", "PAW", "ASI"]
+favoritos = ["PEI", "PAW", "ASI", "PEI"]
 favoritos.sort()
 print("After sort: ", favoritos)
 
 favoritos.reverse()
 print("After reverse: ", favoritos)
+
+favoritos.pop(3)
+print("After \"pop\" position 3 on list: ", favoritos)
+
+# Operadores
+a = 10
+a += 1
+print("\"a\" after +1: ", a)
+a -= 1
+print("\"a\" after -1: ", a)
+
+print("a*2: ", a * 2)
+print("a/2: ", a / 2)
+print("a%3: ", a % 3)
+print("a**2: ", a ** 2)
