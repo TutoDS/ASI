@@ -46,3 +46,17 @@ print("a*2: ", a * 2)
 print("a/2: ", a / 2)
 print("a%3: ", a % 3)
 print("a**2: ", a ** 2)
+
+# String Manipulation
+animais = "Gatos " + "Caes "
+animais += "Coelhos"
+print(animais)
+
+fruta = ", ".join(['Maça', 'Banana', 'Laranja'])
+print(fruta)
+
+data = '%s %d %d' % ('Jan', 11, 2018)
+print(data)
+
+nome = '%(nome)s %(sobrenome)s' % {'nome': 'Carlos', 'sobrenome': 'Silva'}
+print(nome)
