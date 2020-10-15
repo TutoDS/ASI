@@ -15,7 +15,7 @@ print("PT ⎮ EN")
 for legend, translation in translations.items():
     print("⎮ %s ⎮ %a ⎮" % (legend, translation))
 
-print("____")
+print()
 
 # Print translations for "locomotiva"
-print("\"locomotiva\" em inglês é: %a" % (translations["locomotiva"]))
+print("\"locomotiva\" em inglês é: %s" % (" or ".join(translations["locomotiva"])))
