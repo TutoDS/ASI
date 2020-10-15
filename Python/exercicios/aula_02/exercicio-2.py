@@ -1,9 +1,8 @@
 notes = [8, 7, 8, 6, 10, 12, 14, 12, 18, 12, 17]
 
 
-def countNumber(number, myList):
-    nTimes = myList.count(number)
-    return "A nota %d" % number + " aparece %d" % nTimes + " vezes"
+def countNumber(number, list):
+    return "A nota %d aparece %d vezes" % (number, list.count(number))
 
 
 def listOfNotes():
@@ -12,4 +11,4 @@ def listOfNotes():
         print(countNumber(num, notes))
 
 
-print(listOfNotes())
+listOfNotes()
