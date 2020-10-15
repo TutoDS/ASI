@@ -9,14 +9,7 @@ def stripDate(date):
 
 # Classifica a idade
 def classifyAge(age):
-    if age <= 12:
-        return "Criança"
-    elif age >= 13 and age <= 17:
-        return "Juvenil"
-    elif age >= 18 and age <= 64:
-        return "Adulto"
-    else:
-        return "Sénior"
+    return "Criança" if age <= 12 else "Juvenil" if age >= 13 and age <= 17 else "Adulto" if age >= 18 and age <= 64 else "Sénior"
 
 
 # Calcular Idade (com base no ano)
