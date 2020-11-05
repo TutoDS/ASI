@@ -1,14 +1,12 @@
 import re
 
 # Only lowercase Letters
-pattern = re.compile("^[a-zà-ÿ]+$")
+pattern = re.compile(r'[A-Z]')
 
 numberLowercaseLetters = 0
 
 input = input("Insira uma frase: ")
 
-for text in input:
-    if (pattern.match(text)):
-        numberLowercaseLetters += 1
+finallyString = pattern.sub('', input)
 
-print("Número de letras minusculas: %d" % (numberLowercaseLetters))
+print("Número de letras minusculas na frase \"%s\": %d" % (input, len(finallyString)))
