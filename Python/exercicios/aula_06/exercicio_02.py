@@ -14,12 +14,10 @@ def ageEvaluation(age):
     return str
 
 
-regex = re.compile("[A-Z]([a-z]+)\s[A-Z]([a-z]+);(?P<age>\d{1,2})")
-breaklinePattern = "\\n"
+regex = re.compile("^(?P<name>(([A-Za-z]+)\s([A-Za-z]+)));(?P<age>\d{1,2})\n$")
 
 with open("./enunciados/dados2.txt") as file:
     for line in file:
         age = regex.sub(r"\g<age>", line)
-        age = re.sub(breaklinePattern, '', age)
 
         print("%s: %s" % (age, ageEvaluation(age)))
